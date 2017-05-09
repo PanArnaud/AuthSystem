@@ -1,1 +1,2 @@
-authsystem
+AuthSystem
+in native PHP.
