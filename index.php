@@ -2,8 +2,9 @@
   require('includes/config.php');
   require('utils/form.php');
 
-  if($user->isLogged())
+  if($user->isLogged()) {
     header('Location:profile.php');
+  }
 
   if(isset($_POST['submit'])) {
     $username = $_POST['username'];

@@ -15,6 +15,12 @@
       .column {
         max-width: 450px;
       }
+      textarea {
+        resize:none;
+      }
+      a.user {
+        color: #00B5AD;
+      }
     </style>
   </head>
   <body>

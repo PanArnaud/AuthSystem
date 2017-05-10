@@ -79,10 +79,10 @@ class User extends Password
    * @return boolean
    */
   public function login($username, $password) {
-    $user = getUserByUsername($username);
+    $user = $this->getUserByUsername($username);
 
     if($user && $this->checkPassword($password,$user['password']) == 1) {
-      $_SESSION['logged'] = true;
+      $_SESSION['loggedin'] = true;
       $_SESSION['user'] = $user;
 
       return true;
